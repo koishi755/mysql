@@ -3,3 +3,16 @@ DB作成
 CREATE DATABASE testDB;
 
 USE testDB;
+
+
+テーブル作成
+CREATE TABLE users (id INT AUTO_INCREMENT, name TEXT, PRIMARY KEY (id));
+
+
+INSERT INTO users(name) VALUES ('こいし子');
+
+テーブルの削除
+DROP TABLE users;
+
+DBの削除
+DROP DATABASE testDB;
