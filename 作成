@@ -16,3 +16,23 @@ DROP TABLE users;
 
 DBの削除
 DROP DATABASE testDB;
+
+ユーザ作成
+CREATE USER user IDENTIFIED BY 'auth_string';
+
+CREATE USER testUser IDENTIFIED BY 'Test123-';
+
+
+GRANT CREATE on testDB.* to testUser@'%';
+
+create user neko@localhost identified by 'cat';
+grant select on mydb.animal to neko@localhost;
+
+
+全ての権限を付与
+create user kirin@localhost identified by 'giraffe';
+grant all on *.* to kirin@localhost;
+
+
+ユーザー削除
+DROP USER testUser;
