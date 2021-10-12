@@ -37,8 +37,15 @@ mysql -u root
 
 初期パス確認
 
-cat /var/log/mysqld.log | grep root
+grep root /var/log/mysqld.log
+
+初期設定（パスワードとか）
+mysql_secure_installation
 
 
+パスワード変更
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'Test@1234';
 
-cat /var/log/mysqld.log | grep root
+
+設定ファイル
+/etc/my.cnf
