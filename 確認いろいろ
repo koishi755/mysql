@@ -16,3 +16,11 @@ show grants for 'root'@'localhost';
 現在接続しているDB
 SELECT database();
 
+動しているスレッドの情報
+SHOW PROCESSLIST;
+
+テーブル一覧
+SHOW tables;
+
+テーブル構造取得
+DESCRIBE users;
