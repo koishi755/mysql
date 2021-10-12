@@ -1,0 +1,5 @@
+DB作成
+
+CREATE DATABASE testDB;
+
+USE testDB;
