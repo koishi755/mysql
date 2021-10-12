@@ -24,3 +24,13 @@ SHOW tables;
 
 テーブル構造取得
 DESCRIBE users;
+
+
+ユーザーの権限確認
+mysql> show grants for testUser@'%';
++--------------------------------------+
+| Grants for testUser@%                |
++--------------------------------------+
+| GRANT USAGE ON *.* TO `testUser`@`%` |
++--------------------------------------+
+1 row in set (0.00 sec)
