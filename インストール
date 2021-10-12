@@ -1,0 +1,44 @@
+wget https://dev.mysql.com/get/mysql80-community-release-el7-3.noarch.rpm
+
+yum localinstall https://dev.mysql.com/get/mysql80-community-release-el7-3.noarch.rpm
+
+
+cd /etc/yum.repos.d/
+
+以下ｎ２つを確認
+ls | grep mysql-community
+
+mysql-community-source.repo
+mysql-community.repo
+
+リポジトリの確認
+yum info mysql-community-server
+
+インストール
+yum install -y mysql-community-server
+
+
+MySQLのデーモンの起動と停止
+確認
+しっかりMySQLが入ってるかの確認
+
+mysqld --version
+
+systemctl start mysqld
+
+systemctl status mysqld
+たくさん文字が出てきますが、Active: active (running)とどこかにあれば動いている証しです。
+
+systemctl stop mysqld
+
+MySQLの初期設定
+
+mysql -u root
+
+初期パス確認
+
+cat /var/log/mysqld.log | grep root
+
+
+
+cat /var/log/mysqld.log | grep root
