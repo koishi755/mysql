@@ -1,0 +1,10 @@
+connect to my sql
+mysql -u   root -p 
+
+#password
+Power#10
+
+# 
+CREATE USER 'EJX9004250'@'%' IDENTIFIED BY 'Ij7b@wIm2';
+
+grant permession :      GRANT SELECT,INSERT,UPDATE,EXECUTE,SHOW VIEW ON *.* to 'EJX9004294'@'%' ; (it depends what's the user want )
