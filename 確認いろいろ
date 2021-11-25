@@ -34,3 +34,13 @@ mysql> show grants for testUser@'%';
 | GRANT USAGE ON *.* TO `testUser`@`%` |
 +--------------------------------------+
 1 row in set (0.00 sec)
+
+# 設定ファイル
+mysql --help | grep my.cnf
+
+#wait_timeoutの確認
+show global variables like '%wait%';
+
+#max_allowed_packetの確認
+show variables like 'max_allowed_packet';
+
