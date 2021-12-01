@@ -1,4 +1,9 @@
 
+connect to my sql
+mysql -u   root -p 
+
+#password
+Power#10
 
 show databases;
 
