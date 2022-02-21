@@ -1,0 +1,6 @@
+# ログの設定ファイル
+/etc/my.cnf
+
+
+
+grep log-error /etc/my.cnf
