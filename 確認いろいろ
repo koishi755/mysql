@@ -1,5 +1,5 @@
 
-connect to my sql
+#connect to my sql
 mysql -u   root -p 
 
 #password
