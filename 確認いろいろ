@@ -49,3 +49,5 @@ show global variables like '%wait%';
 #max_allowed_packetの確認
 show variables like 'max_allowed_packet';
 
+# データディレクトリの場所を確認する
+select @@datadir;
