@@ -1,6 +1,9 @@
 wget https://dev.mysql.com/get/mysql80-community-release-el7-3.noarch.rpm
+wget http://dev.mysql.com/get/mysql80-community-release-el8-3.noarch.rpm
 
 yum localinstall https://dev.mysql.com/get/mysql80-community-release-el7-3.noarch.rpm
+yum localinstall http://dev.mysql.com/get/mysql80-community-release-el8-3.noarch.rpm
+
 
 
 cd /etc/yum.repos.d/
