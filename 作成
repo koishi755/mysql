@@ -36,3 +36,26 @@ grant all on *.* to kirin@localhost;
 
 ユーザー削除
 DROP USER testUser;
+
+
+
+
+
+
+
+
+
+グローバルレベル
+GRANT ALL ON *.* TO user;
+GRANT SELECT, INSERT ON *.* TO user;
+
+データベースレベル
+GRANT ALL ON db_name.* TO user;
+GRANT SELECT, INSERT ON mydb.* TO user;
+
+テーブルレベル
+GRANT ALL ON db_name.table_name TO user;
+GRANT SELECT, INSERT ON db_name.mytbl TO user;
+
+カラムレベル
+GRANT SELECT (col1), INSERT (col1, col2) ON db_name.table_name TO user;
