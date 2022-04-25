@@ -37,6 +37,7 @@ systemctl stop mysqld
 MySQLの初期設定
 
 mysql -u root
+mysql -u root -p
 
 初期パス確認
 
@@ -44,6 +45,9 @@ grep root /var/log/mysqld.log
 
 初期設定（パスワードとか）
 mysql_secure_installation
+
+パスワード変更
+SET PASSWORD = 'Raul755-'
 
 
 パスワード変更
