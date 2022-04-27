@@ -41,6 +41,12 @@ grant select on mydb.animal to neko@localhost;
 create user kirin@localhost identified by 'giraffe';
 grant all on *.* to kirin@localhost;
 
+登録されてるホストとユーザー名の確認
+select user, host from mysql.user;
+
+特定のユーザーの権限確認
+show grants for 'ユーザー名'@'ホスト名';
+
 
 ユーザー削除
 DROP USER testUser;
