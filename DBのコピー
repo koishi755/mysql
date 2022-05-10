@@ -14,5 +14,15 @@ mysql> SHOW tables;
 Empty set (0.00 sec)
 
 
-DBの
+# DBへデータを挿入する
 mysql -u root -p testDB2 < from_testdb.sql
+
+
+データが存在する
+mysql> select * from testDB2.users;
++----+--------------+
+| id | name         |
++----+--------------+
+|  1 | こいし子     |
++----+--------------+
+1 row in set (0.00 sec)
