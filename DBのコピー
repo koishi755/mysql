@@ -12,3 +12,7 @@ use testDB2;
 この時点ではテーブルはない
 mysql> SHOW tables;
 Empty set (0.00 sec)
+
+
+DBの
+mysql -u root -p testDB2 < from_testdb.sql
