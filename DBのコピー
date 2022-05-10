@@ -4,3 +4,11 @@ mysqldump -u root -p testDB > from_testdb.sql
 
 # DBの作成
 mysqladmin -u root -p create testDB2
+
+
+新しいDBに移動
+use testDB2;
+
+この時点ではテーブルはない
+mysql> SHOW tables;
+Empty set (0.00 sec)
