@@ -1,0 +1,3 @@
+
+# DBの取得
+mysqldump -u root -p testDB > from_testdb.sql
