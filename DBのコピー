@@ -5,6 +5,9 @@ mysqldump -u root -p testDB > from_testdb.sql
 # DBの作成
 mysqladmin -u root -p create testDB2
 
+または。。
+CREATE DATABASE testDB2;
+
 
 新しいDBに移動
 use testDB2;
