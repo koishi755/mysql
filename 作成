@@ -35,6 +35,7 @@ GRANT CREATE, Insert, Update, Execute, Show View on testDB.* to 'testUser'@'%';
 
 # 接続確認
 mysql -u   testUser -pTest123-
+use TestDB;
 
 create user neko@localhost identified by 'cat';
 grant select on mydb.animal to neko@localhost;
