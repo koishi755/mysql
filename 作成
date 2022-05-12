@@ -46,6 +46,7 @@ select user, host from mysql.user;
 
 特定のユーザーの権限確認
 show grants for 'ユーザー名'@'ホスト名';
+show grants for 'testUser'@'localhost';
 
 
 ユーザー削除
