@@ -1,6 +1,6 @@
 
 #connect to my sql
-mysql -u   root -p 
+mysql -u root -pPower#10 
 
 #password
 Power#10
