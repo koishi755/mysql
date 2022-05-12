@@ -31,7 +31,7 @@ CREATE USER user IDENTIFIED BY 'auth_string';
 CREATE USER testUser IDENTIFIED BY 'Test123-';
 
 
-GRANT CREATE, Insert, Update, Execute, Show View on testDB.* to 'testUser'@'%';
+GRANT SELECT, CREATE, Insert, Update, Execute, Show View on testDB.* to 'testUser'@'%';
 
 # 接続確認
 mysql -u   testUser -pTest123-
