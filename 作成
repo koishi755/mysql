@@ -56,6 +56,9 @@ show grants for 'testUser'@'localhost';
 ユーザー削除
 DROP USER testUser;
 
+レコードの削除
+delete from users where id=1;
+
 
 
 
