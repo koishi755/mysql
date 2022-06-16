@@ -10,6 +10,9 @@ show databases;
 登録されてるホストとユーザー名の確認
 select user, host from mysql.user;
 
+# 全ユーザーの権限
+select * from mysql.user;
+
 特定のユーザーの権限確認
 show grants for 'ユーザー名'@'ホスト名';
 
