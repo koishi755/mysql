@@ -31,6 +31,9 @@ CREATE USER user IDENTIFIED BY 'auth_string';
 CREATE USER testUser IDENTIFIED BY 'Test123-';
 GRANT ALL ON *.* TO 'testUser'@'%';
 
+# PHPで接続する場合は以下のコマンドが必要
+ALTER USER 'test'@'%'  IDENTIFIED WITH mysql_native_password BY 'Test123-';
+
 
 GRANT SELECT, CREATE, Insert, Update, Execute, Show View on testDB.* to 'testUser'@'%';
 
