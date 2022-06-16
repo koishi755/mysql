@@ -17,3 +17,6 @@ systemctl restart mysqld
 
 # バイナリログの確認
 mysqlbinlog mysql-bin.000001
+
+# 詳しく見る
+mysqlbinlog -v mysql-bin.000001
