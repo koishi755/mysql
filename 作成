@@ -29,6 +29,7 @@ DROP DATABASE testDB;
 CREATE USER user IDENTIFIED BY 'auth_string';
 
 CREATE USER testUser IDENTIFIED BY 'Test123-';
+GRANT ALL ON *.* TO 'testUser'@'%';
 
 
 GRANT SELECT, CREATE, Insert, Update, Execute, Show View on testDB.* to 'testUser'@'%';
