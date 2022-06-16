@@ -11,3 +11,9 @@ touch mysql-bin
 chown mysql:mysql mysql-bin
 cd ..
 chown mysql:mysql data
+
+# mysql の再起動
+systemctl restart mysqld
+
+# バイナリログの確認
+mysqlbinlog mysql-bin.000001
