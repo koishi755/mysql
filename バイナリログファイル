@@ -1,0 +1,13 @@
+# 設定ファイルの以下の1行を追記
+vim /etc/my.cnf
+
+log-bin=/var/lib/mysql/data/mysql-bin
+
+cd /var/lib/mysql
+
+mkdir data
+cd data 
+touch mysql-bin
+chown mysql:mysql mysql-bin
+cd ..
+chown mysql:mysql data
