@@ -6,7 +6,7 @@ do
     echo "" >> user_privilege.txt
     user="$(echo $line | cut -d " " -f 1)"
     host="$(echo $line | cut -d " " -f 2)"
-    mysql -u root -p"Power#10" -e "show grants for '$user'@'$host';" >> user_privilege.txt
+    mysql -u root -p"password" -e "show grants for '$user'@'$host';" >> user_privilege.txt
     echo "" >> user_privilege.txt
 done < mysql_users
 
