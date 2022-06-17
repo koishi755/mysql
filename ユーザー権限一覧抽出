@@ -1,13 +1,13 @@
 #! /bin/bash
-mysql -u root -p"password" -e "select user, host from mysql.user;" | tail -n +2  > mysql_users
+mysql -u root -p"Raul755-" -e "select user, host from mysql.user;" | tail -n +2  > mysql_users
 
 while read line
 do
-    echo ""
+    echo "" >> user_privilege.txt
     user="$(echo $line | cut -d " " -f 1)"
     host="$(echo $line | cut -d " " -f 2)"
-    mysql -u root -p"Raul755-" -e "show grants for '$user'@'$host';"
-    echo ""
+    mysql -u root -p"Raul755-" -e "show grants for '$user'@'$host';" >> user_privilege.txt
+    echo "" >> user_privilege.txt
 done < /root/mysql_users
 
 rm -f mysql_users
