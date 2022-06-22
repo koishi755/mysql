@@ -1,1 +1,62 @@
-CREATE USER <ユーザー名> 
+CREATE USER <ユーザー名> IDENTIFIED BY <パスワード>;
+CREATE USER testUser IDENTIFIED BY 'Test123-';
+
+
+GRANT ALL ON '<DB名>'.'<テーブル名>' TO '<ユーザー名>'@'<ホスト名>';
+GRANT ALL ON *.* TO 'testUser'@'%';
+GRANT SELECT ON testDB.users to 'testUser'@'%';
+GRANT SELECT, CREATE, Insert, Update, Execute, Show View on testDB.* to 'testUser'@'%';
+
+# PHPで接続する場合は以下のコマンドが必要
+ALTER USER 'test'@'%'  IDENTIFIED WITH mysql_native_password BY 'Test123-';
+
+以下のように「mysql_native_password」になっている必要がある。（アプリによる。
+
+
+mysql> SELECT host, user, plugin FROM mysql.user;
++-----------+------------------+-----------------------+
+| host      | user             | plugin                |
++-----------+------------------+-----------------------+
+| %         | test             | mysql_native_password |
+| %         | testUser         | caching_sha2_password |
+| localhost | mysql.infoschema | caching_sha2_password |
+| localhost | mysql.session    | caching_sha2_password |
+| localhost | mysql.sys        | caching_sha2_password |
+| localhost | root             | caching_sha2_password |
++-----------+------------------+-----------------------+
+
+
+
+
+
+
+# 接続確認
+mysql -u   testUser -pTest123-
+
+
+登録されてるホストとユーザー名の確認
+select user, host from mysql.user;
+
+特定のユーザーの権限確認
+show grants for 'ユーザー名'@'ホスト名';
+show grants for 'testUser'@'localhost';
+
+
+ユーザー削除
+DROP USER testUser;
+
+
+グローバルレベル
+GRANT ALL ON *.* TO user;
+GRANT SELECT, INSERT ON *.* TO user;
+
+データベースレベル
+GRANT ALL ON db_name.* TO user;
+GRANT SELECT, INSERT ON mydb.* TO user;
+
+テーブルレベル
+GRANT ALL ON db_name.table_name TO user;
+GRANT SELECT, INSERT ON db_name.mytbl TO user;
+
+カラムレベル
+GRANT SELECT (col1), INSERT (col1, col2) ON db_name.table_name TO user;
