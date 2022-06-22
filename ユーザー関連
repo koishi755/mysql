@@ -25,9 +25,9 @@ mysql> SELECT host, user, plugin FROM mysql.user;
 | localhost | root             | caching_sha2_password |
 +-----------+------------------+-----------------------+
 
-
-
-
+特定のユーザーの権限確認
+show grants for 'ユーザー名'@'ホスト名';
+show grants for 'testUser'@'localhost';
 
 
 # 接続確認
@@ -37,9 +37,7 @@ mysql -u   testUser -pTest123-
 登録されてるホストとユーザー名の確認
 select user, host from mysql.user;
 
-特定のユーザーの権限確認
-show grants for 'ユーザー名'@'ホスト名';
-show grants for 'testUser'@'localhost';
+
 
 
 ユーザー削除
