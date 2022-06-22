@@ -37,8 +37,9 @@ mysql -u   testUser -pTest123-
 登録されてるホストとユーザー名の確認
 select user, host from mysql.user;
 
-
-
+#権限の削除
+REVOKE CREATE on <DB名>.<テーブル名> FROM '<ユーザー名>'@'<ホスト名>';
+REVOKE CREATE on testDB.* FROM 'test_user'@'%';
 
 ユーザー削除
 DROP USER testUser;
