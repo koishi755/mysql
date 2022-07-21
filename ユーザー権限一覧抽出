@@ -11,3 +11,30 @@ do
 done < mysql_users
 
 rm -f mysql_users
+
+
+
+
+
+
+# 接続情報を外部ファイルから取得するやり方
+mysql-dbaccess.cnf
+[client]
+user = root
+password = Power#10
+
+
+
+#! /bin/bash
+mysql --defaults-extra-file=mysql-dbaccess.cnf -e "select user, host from mysql.user;" | tail -n +2  > mysql_users
+
+while read line
+do
+    echo "" >> user_privilege.txt
+    user="$(echo $line | cut -d " " -f 1)"
+    host="$(echo $line | cut -d " " -f 2)"
+    mysql --defaults-extra-file=mysql-dbaccess.cnf -e "show grants for '$user'@'$host';" >> user_privilege.txt
+    echo "" >> user_privilege.txt
+done < mysql_users
+
+rm -f mysql_users
