@@ -59,3 +59,7 @@ GRANT SELECT, INSERT ON db_name.mytbl TO user;
 
 カラムレベル
 GRANT SELECT (col1), INSERT (col1, col2) ON db_name.table_name TO user;
+
+
+# ユーザーのパスワードの有効期限
+select user, host, password_lifetime, password_last_changed from mysql.user;
