@@ -54,3 +54,6 @@ show variables like 'max_allowed_packet';
 
 # データディレクトリの場所を確認する
 select @@datadir;
+
+show variables like 'datadir';
+
