@@ -4,10 +4,21 @@
 
 <br>
 
+今回はバージョン5.7.16をダウンロードします。
+
 ![](./img/01.png)
 
+<br>
+
+以下のコマンドを実行し、rpmをダウンロードします。
 
 ```
 wget https://downloads.mysql.com/archives/get/p/23/file/mysql-community-server-5.7.16-1.el6.x86_64.rpm
 ```
 
+<br>
+
+
+```
+rpm -qpl mysql-community-server-5.7.16-1.el6.x86_64.rpm
+```
