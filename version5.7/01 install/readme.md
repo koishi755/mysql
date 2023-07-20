@@ -1,7 +1,13 @@
-以下のサイトから「Red Hat Enterprise Linux 6 / Oracle Linux 6 (Architecture Independent), RPM Package」をダウンロードします。<br>
+以下のサイトからインストールするバージョンのrpmを探します。
 
-[MySQL Yum Repository](https://dev.mysql.com/downloads/repo/yum/)
+[MySQL Product Archives](https://downloads.mysql.com/archives/community/)
 
 <br>
 
 ![](./img/01.png)
+
+
+```
+wget https://downloads.mysql.com/archives/get/p/23/file/mysql-community-server-5.7.16-1.el6.x86_64.rpm
+```
+
