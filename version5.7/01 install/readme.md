@@ -63,3 +63,11 @@ MySQLを再起動
 ```
 service mysqld restart
 ```
+
+<br>
+
+MySQLにログイン
+
+```
+mysql -u root
+```
