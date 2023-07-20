@@ -22,3 +22,7 @@ wget https://downloads.mysql.com/archives/get/p/23/file/mysql-community-server-5
 ```bash
 rpm -qpl mysql-community-server-5.7.16-1.el6.x86_64.rpm
 ```
+
+```
+service mysqld start
+```
