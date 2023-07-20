@@ -26,3 +26,8 @@ rpm -qpl mysql-community-server-5.7.16-1.el6.x86_64.rpm
 ```
 service mysqld start
 ```
+
+
+```
+grep 'temporary password' /var/log/mysqld.log
+```
