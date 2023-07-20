@@ -33,6 +33,7 @@ rpm -qpl mysql-community-server-5.7.16-1.el6.x86_64.rpm
 service mysqld start
 ```
 
+<br>
 
 初期パスワード確認
 
@@ -53,3 +54,12 @@ vi /etc/my.cnf
 skip-grant-tables
 ```
 
+![](./img/02.png)
+
+<br>
+
+MySQLを再起動
+
+```
+service mysqld restart
+```
