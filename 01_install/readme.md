@@ -19,3 +19,20 @@ yum info mysql-community-server
 ```
 yum install -y mysql-community-server
 ```
+
+```
+mysqld --version
+```
+
+```
+systemctl start mysqld
+```
+
+```
+systemctl status mysqld
+```
+
+```
+systemctl stop mysqld
+```
+
