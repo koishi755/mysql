@@ -11,9 +11,13 @@ mysql -uroot
 use mysql
 ```
 
+```
+mysql_secure_installation
+```
+
 
 ```
-update user set Password=password('Raul755-') where User='root';
+ALTER USER root@'%'  IDENTIFIED WITH BY 'Raul755-';
 ```
 
 ```
