@@ -29,3 +29,7 @@ ALTER USER 'ユーザー'@'%'  IDENTIFIED WITH mysql_native_password BY 'パス�
 ```
 flush privileges;
 ```
+
+```
+show grants for 'ユーザー名'@'ホスト名';
+```
