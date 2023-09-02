@@ -33,6 +33,6 @@ systemctl status mysqld
 ```
 
 ```
-systemctl stop mysqld
+systemctl enable mysqld
 ```
 
