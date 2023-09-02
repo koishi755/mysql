@@ -11,10 +11,6 @@ mysql -uroot
 use mysql
 ```
 
-```
-mysql_secure_installation
-```
-
 
 ```
 ALTER USER root@'%'  IDENTIFIED WITH BY 'Raul755-';
@@ -22,4 +18,9 @@ ALTER USER root@'%'  IDENTIFIED WITH BY 'Raul755-';
 
 ```
 flush privileges;
+```
+
+
+```
+mysql_secure_installation
 ```
