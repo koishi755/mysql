@@ -1,4 +1,4 @@
-
+[2.5.1 MySQL Yum リポジトリを使用して MySQL を Linux にインストールする](https://dev.mysql.com/doc/refman/8.0/ja/linux-installation-yum-repo.html)
 
 [MySQL Community Downloads](https://dev.mysql.com/downloads/repo/yum/)
 
