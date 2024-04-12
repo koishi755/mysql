@@ -23,3 +23,9 @@ yum repolist enabled | grep "mysql.*-community.*"
 
 <br>
 
+MySQL Yum リポジトリを使用する場合、デフォルトで最新の GA シリーズ (現在の MySQL 8.0) がインストール用に選択されます。次のコマンドでMySQL Yum リポジトリ内のすべてのサブリポジトリを表示できます。
+
+
+```
+yum repolist all | grep mysql
+```
