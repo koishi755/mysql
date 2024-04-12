@@ -90,3 +90,14 @@ mysql -uroot -p
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass4!';
 ```
 
+
+# 6 
+ODBCのインストール
+
+```
+https://dev.mysql.com/get/Downloads/Connector-ODBC/8.3/mysql-connector-odbc-8.3.0-1.el8.x86_64.rpm
+```
+
+```
+yum localinstall mysql-connector-odbc-8.3.0-1.el8.x86_64.rpm
+```
