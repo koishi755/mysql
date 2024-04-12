@@ -45,4 +45,48 @@ yum module disable mysql
 ```
 
 
+# 4 MySQL のインストール
+
+
+
+```
+yum install mysql-community-server
+```
+
+
+# 5 MySQL Server の起動
+
+```
+systemctl start mysqld
+```
+
+```
+systemctl status mysqld
+```
+
+```
+systemctl enable mysqld
+```
+
+<br>
+
+
+## 5-1 初期パスワードの確認
+
+```
+grep 'temporary password' /var/log/mysqld.log
+```
+
+
+## 5-2 ログイン
+
+```
+mysql -uroot -p
+```
+
+## 5-3 初期パスワードの変更
+
+```
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'MyNewPass4!';
+```
 
