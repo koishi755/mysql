@@ -24,5 +24,5 @@ CREATE USER 'testuser'@'%' IDENTIFIED BY 'password';
 ```
 
 ```
-GRANT ALL ON *.* TO 'testser'@'%' WITH GRANT OPTION;
+GRANT ALL ON *.* TO 'testuser'@'%' WITH GRANT OPTION;
 ```
