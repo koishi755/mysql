@@ -73,5 +73,11 @@ show variables where variable_name='lower_case_table_names';
 ```
 
 
+# 4 データベースの復元
+
+```
+mysql -u root -p Test_mydatabase < Test_mydatabase.sql
+```
+
 
 
