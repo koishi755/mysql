@@ -14,9 +14,13 @@ grep password /var/log/mysqld.log
 mysql_secure_installation
 ```
 
-# 別の方法のパスワード変更
 
 <br>
+
+
+# 別の方法のパスワード変更
+
+
 
 MySQLに接続します。
 
