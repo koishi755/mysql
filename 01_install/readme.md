@@ -20,14 +20,25 @@ MySQL Yum リポジトリをシステムのリポジトリリストに追加し�
 yum localinstall mysql80-community-release-el7-10.noarch.rpm
 ```
 
+<br>
+
+インストールできるバージョンなどを確認します。
 
 ```
 yum info mysql-community-server
 ```
 
+<br>
+
+MySQLをインストールします。
+
 ```
 yum install -y mysql-community-server
 ```
+
+<br>
+
+インストール後、バージョンを確認します。
 
 ```
 mysqld --version
