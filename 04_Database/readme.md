@@ -5,3 +5,22 @@
 ```
 SHOW DATABASES;
 ```
+
+<br>
+
+## 1-2 新規Databaseの作成
+
+以下のSQLを実行し、Databaseを作成します。
+
+```
+CREATE DATABASE <Database名>;
+```
+
+<br>
+
+
+実行例
+
+```
+CREATE DATABASE Test-mydatabase;
+```
