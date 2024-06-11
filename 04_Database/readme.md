@@ -22,5 +22,9 @@ CREATE DATABASE <Database名>;
 実行例
 
 ```
-CREATE DATABASE Test-mydatabase;
+CREATE DATABASE Test_mydatabase;
 ```
+
+<br>
+
+※Database名は大文字と小文字を区別しているようです。
