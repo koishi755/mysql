@@ -71,6 +71,10 @@ systemctl start mysqld
 ```
 
 
+```
+show variables where variable_name='lower_case_table_names';
+```
+
 
 
 
