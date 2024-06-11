@@ -85,6 +85,8 @@ lower_case_table_names=1 # <-- 追記
 mysqld --defaults-file=/etc/my.cnf --initialize --user=mysql --console
 ```
 
+<br>
+
 ファイルが作成されているか確認
 
 
@@ -92,10 +94,17 @@ mysqld --defaults-file=/etc/my.cnf --initialize --user=mysql --console
 ls -l /var/lib/mysql
 ```
 
+<br>
+
+MySQLを再起動します。
 
 ```
 systemctl restart mysqld
 ```
+
+<br>
+
+MySQLの再起動後、以下のSQLを実行し、lower_case_table_namesの値が「1」になっていることを確認します。
 
 
 ```
