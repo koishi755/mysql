@@ -47,6 +47,9 @@ ALTER USER 'ユーザー'@'%'  IDENTIFIED WITH mysql_native_password BY 'パス�
 flush privileges;
 ```
 
+
+ユーザー情報の確認
+
 ```
 show grants for 'ユーザー名'@'ホスト名';
 ```
