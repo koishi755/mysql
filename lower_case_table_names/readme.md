@@ -76,6 +76,7 @@ pid-file=/var/run/mysqld/mysqld.pid
 lower_case_table_names=1 # <-- 追記
 ```
 
+<br>
 
 # 3 MySQLの初期化
 
@@ -101,6 +102,7 @@ systemctl restart mysqld
 show variables where variable_name='lower_case_table_names';
 ```
 
+<br>
 
 # 4 データベースの復元
 
