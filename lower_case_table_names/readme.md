@@ -55,7 +55,7 @@ ls -l /var/lib/mysql
 
 
 ```
-systemctl start mysqld
+systemctl restart mysqld
 ```
 
 
