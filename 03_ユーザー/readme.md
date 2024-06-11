@@ -1,4 +1,6 @@
-# ユーザー作成
+# 1 ユーザー作成
+
+以下のコマンドを実行し、新規ユーザを作成します。
 
 ```
 CREATE USER <ユーザー名> IDENTIFIED BY '<パスワード>';
@@ -6,7 +8,17 @@ CREATE USER <ユーザー名> IDENTIFIED BY '<パスワード>';
 
 <br>
 
-# 権限の付与
+
+実行例
+
+```
+CREATE USER testuser1 IDENTIFIED BY 'Init123-';
+```
+
+
+<br>
+
+# 2 権限の付与
 
 ```
 GRANT ALL ON '<DB名>'.'<テーブル名>' TO '<ユーザー名>'@'<ホスト名>';
@@ -17,8 +29,11 @@ GRANT ALL ON '<DB名>'.'<テーブル名>' TO '<ユーザー名>'@'<ホスト名
 以下はtestUserに全ての権限を与える
 
 ```
-GRANT ALL ON *.* TO testUser;
+GRANT ALL ON *.* TO testuser1;
 ```
+
+# 3 ユーザー情報の変更
+
 
 
 ```
