@@ -60,3 +60,7 @@ Use <Database名>;
 実行例
 
 
+```
+Use Test_mydatabase;
+```
+
