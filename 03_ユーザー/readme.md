@@ -20,6 +20,8 @@ CREATE USER testuser1 IDENTIFIED BY 'Init123-';
 
 # 2 権限の付与
 
+以下のコマンドを実行し、権限を付与します。
+
 ```
 GRANT ALL ON '<DB名>'.'<テーブル名>' TO '<ユーザー名>'@'<ホスト名>';
 ```
