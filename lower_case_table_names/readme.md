@@ -1,5 +1,7 @@
 # 1 データベースのバックアップを取得
 
+特定のDBのバックアップを取得。
+
 ```
 mysqldump -u root -p Test_mydatabase > Test_mydatabase.sql
 ```
@@ -11,7 +13,7 @@ mysqldump -u root -p Test_mydatabase > Test_mydatabase.sql
 
 
 ```
-mysqldump -u root -p --all-databases > backup-$(date +%Y%m%d).sql
+mysqldump -u root -p --all-databases > mysql-all-backup.sql
 ```
 
 
@@ -86,8 +88,19 @@ show variables where variable_name='lower_case_table_names';
 
 # 4 データベースの復元
 
+特定のDBの復元
+
 ```
 mysql -u root -p Test_mydatabase < Test_mydatabase.sql
+```
+
+
+<br>
+
+全て復元
+
+```
+mysql -u root -p < mysql-all-backup.sql
 ```
 
 
