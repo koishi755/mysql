@@ -47,3 +47,26 @@ CREATE TABLE users (
 );
 ```
 
+# 3 テーブルのリストを確認
+
+
+```
+SHOW TABLES;
+```
+
+## 3-1 テーブル情報の詳細を確認
+
+```
+DESCRIBE <table名>;
+```
+
+
+<br>
+
+
+実行例
+
+```
+DESCRIBE users;
+```
+
