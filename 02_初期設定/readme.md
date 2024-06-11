@@ -37,7 +37,7 @@ use mysql
 
 
 ```
-ALTER USER root@'%'  IDENTIFIED WITH BY 'Raul755-';
+ALTER USER root@'localhost'  IDENTIFIED WITH BY 'Raul755-';
 ```
 
 ```
