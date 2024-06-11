@@ -6,6 +6,17 @@ mysqldump -u root -p Test_mydatabase > Test_mydatabase.sql
 
 <br>
 
+
+または以下のように全てのDBを取得。
+
+
+```
+mysqldump -u root -p --all-databases > backup-$(date +%Y%m%d).sql
+```
+
+
+<br>
+
 # 2 /var/lib/mysqlのバックアップ
 
 MySQLのデータストアの削除
