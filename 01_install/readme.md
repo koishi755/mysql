@@ -70,4 +70,4 @@ systemctl status mysqld
 systemctl enable mysqld
 ```
 
-[02_初期設定](/mysql/blob/main/02_初期設定/readme.md)
+[02_初期設定](https://github.com/koishi755/mysql/blob/main/02_%E5%88%9D%E6%9C%9F%E8%A8%AD%E5%AE%9A/readme.md)
