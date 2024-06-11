@@ -44,15 +44,30 @@ yum install -y mysql-community-server
 mysqld --version
 ```
 
+<br>
+
+
+MySQLをスタートします。
+
 ```
 systemctl start mysqld
 ```
+
+<br>
+
+MySQLが起動しているか確認します。
 
 ```
 systemctl status mysqld
 ```
 
+<br>
+
+サーバー起動時にMySQLが起動するよう設定します。<br>
+
+
 ```
 systemctl enable mysqld
 ```
 
+[02_初期設定](02_初期設定/readme.md)
