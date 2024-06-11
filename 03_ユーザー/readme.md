@@ -18,8 +18,9 @@ CREATE USER testuser1 IDENTIFIED BY 'Init123-';
 
 <br>
 
-# 2 権限の付与
+# 2 ユーザー権限
 
+## 2-1 権限の付与
 以下のコマンドを実行し、権限を付与します。
 
 ```
@@ -34,17 +35,14 @@ GRANT ALL ON '<DB名>'.'<テーブル名>' TO '<ユーザー名>'@'<ホスト名
 GRANT ALL ON *.* TO testuser1;
 ```
 
-# 3 ユーザー情報の変更
+<br>
 
+## 2-2 ユーザー権限の確認
 
-
-```
-ALTER USER 'ユーザー'@'%'  IDENTIFIED WITH mysql_native_password BY 'パスワード';
-```
-
+全ユーザーのリストを取得
 
 ```
-flush privileges;
+SELECT User, Host FROM mysql.user;
 ```
 
 
@@ -53,3 +51,25 @@ flush privileges;
 ```
 show grants for 'ユーザー名'@'ホスト名';
 ```
+
+
+
+# 3 ユーザー情報の変更
+
+パスワードの変更
+
+```
+ALTER USER 'ユーザー'@'%'  IDENTIFIED WITH mysql_native_password BY 'パスワード';
+```
+
+<br>
+
+権限の付与などを即時更新
+
+```
+flush privileges;
+```
+
+<br>
+
+
