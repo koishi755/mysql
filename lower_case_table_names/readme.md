@@ -12,16 +12,7 @@ rm -rf /var/lib/mysql
 ```
 
 ```
-rm -f /var/log/mysql/mysqld.log
-```
-
-```
 rm -f /var/log/mysqld.log
-```
-
-
-```
-touch /var/log/mysql/mysqld.log
 ```
 
 
@@ -35,9 +26,6 @@ chown mysql:mysql /var/log/mysqld.log
 
 
 
-```
-chown mysql:mysql /var/log/mysql/mysqld.log
-```
 
 ```
 vim /etc/my.cnf.d/mysql-server.cnf
