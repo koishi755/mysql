@@ -1,15 +1,19 @@
-# 1 識別子の大文字と小文字の区別
+# 1 データベースのバックアップを取得
 
+```
+mysqldump -u root -p Test_mydatabase > Test_mydatabase.sql
+```
+
+<br>
+
+# 2 /var/lib/mysqlのバックアップ
 
 MySQLのデータストアの削除
 
 ```
-cp -rp /var/lib/mysql /var/tmp/mysql
+mv /var/lib/mysql /var/tmp/mysql
 ```
 
-```
-rm -rf /var/lib/mysql
-```
 
 ```
 rm -f /var/log/mysqld.log
