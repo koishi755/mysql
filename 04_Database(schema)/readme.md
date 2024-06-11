@@ -35,3 +35,28 @@ CREATE DATABASE Test_mydatabase;
 <br>
 
 ※Database名は大文字と小文字を区別しているようです。
+
+
+
+# 3 データベースの移動
+
+現在のデータベースの確認
+
+```
+SELECT DATABASE();
+```
+
+<br>
+
+以下のコマンドを実行し、データベースを移動します。
+
+```
+Use <Database名>;
+```
+
+<br>
+
+
+実行例
+
+
