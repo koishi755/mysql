@@ -4,7 +4,11 @@
 MySQLのデータストアの削除
 
 ```
-mv /var/lib/mysql /var/tmp/mysql
+cp /var/lib/mysql /var/tmp/mysql
+```
+
+```
+rm -rf /var/lib/mysql
 ```
 
 ```
