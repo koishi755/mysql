@@ -21,6 +21,14 @@ mysqldump -u root -p --all-databases > mysql-all-backup.sql
 
 # 2 /var/lib/mysqlのバックアップ
 
+MySQLを停止します。
+
+```
+systemctl stop mysqld
+```
+
+<br>
+
 MySQLのライブラリを削除
 
 ```
