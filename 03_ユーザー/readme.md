@@ -45,6 +45,7 @@ GRANT ALL ON *.* TO testuser1;
 SELECT User, Host FROM mysql.user;
 ```
 
+<br>
 
 ユーザー情報の確認
 
@@ -52,7 +53,7 @@ SELECT User, Host FROM mysql.user;
 show grants for 'ユーザー名'@'ホスト名';
 ```
 
-
+<br>
 
 # 3 ユーザー情報の変更
 
