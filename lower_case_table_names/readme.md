@@ -21,33 +21,49 @@ mysqldump -u root -p --all-databases > mysql-all-backup.sql
 
 # 2 /var/lib/mysqlのバックアップ
 
-MySQLのデータストアの削除
+MySQLのライブラリを削除
 
 ```
 mv /var/lib/mysql /var/tmp/mysql
 ```
 
+<br>
+
+ログの削除
 
 ```
 rm -f /var/log/mysqld.log
 ```
 
+<br>
+
+新しいログを作成
 
 ```
 touch /var/log/mysqld.log
 ```
 
+
+<br>
+
+権限の付与
+
 ```
 chown mysql:mysql /var/log/mysqld.log
 ``` 
 
+<br>
 
+設定ファイルの編集
 
 
 ```
 vim /etc/my.cnf
 ```
 
+<br>
+
+lower_case_table_names=1 を追加します。
 
 ```
 # /etc/my.cnf
@@ -61,7 +77,7 @@ lower_case_table_names=1 # <-- 追記
 ```
 
 
-# 初期化
+# 3 MySQLの初期化
 
 
 ```
