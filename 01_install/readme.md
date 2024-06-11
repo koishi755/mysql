@@ -2,9 +2,18 @@
 
 [MySQL Community Downloads](https://dev.mysql.com/downloads/repo/yum/)
 
+
+# 1 MySQL Yum リポジトリの追加
+
+MySQL Yum リポジトリをダウンロードします。
+
 ```
 wget https://dev.mysql.com/get/mysql80-community-release-el7-10.noarch.rpm
 ```
+
+<br>
+
+MySQL Yum リポジトリをシステムのリポジトリリストに追加します。<br>
 
 
 ```
