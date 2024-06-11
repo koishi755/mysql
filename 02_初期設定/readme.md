@@ -14,7 +14,7 @@ grep password /var/log/mysqld.log
 mysql_secure_installation
 ```
 
-#　別の方法のパスワード変更
+# 別の方法のパスワード変更
 
 <br>
 
