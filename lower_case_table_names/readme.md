@@ -28,14 +28,19 @@ chown mysql:mysql /var/log/mysqld.log
 
 
 ```
-vim /etc/my.cnf.d/mysql-server.cnf
+vim /etc/my.cnf
 ```
 
 
 ```
-# /etc/my.cnf.d/mysql-server.cnf
-[mysqld]
-lower_case_table_names=1
+# /etc/my.cnf
+datadir=/var/lib/mysql
+socket=/var/lib/mysql/mysql.sock
+
+log-error=/var/log/mysqld.log
+pid-file=/var/run/mysqld/mysqld.pid
+
+lower_case_table_names=1 # <-- 追記
 ```
 
 
