@@ -32,3 +32,13 @@ FROM
 JOIN
     orders ON users.id = orders.user_id;
 ```
+
+
+```
+SELECT * FROM user_orders;
+```
+
+
+```
+SHOW CREATE VIEW user_orders;
+```
