@@ -42,3 +42,13 @@ SELECT * FROM user_orders;
 ```
 SHOW CREATE VIEW user_orders;
 ```
+
+<br>
+
+View一覧を確認
+
+```
+SELECT TABLE_NAME
+FROM information_schema.TABLES
+WHERE TABLE_TYPE = 'VIEW'
+```
